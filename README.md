@@ -1,3 +1,3 @@
 # toy
 
-litte funny server to learn programming.
+Little funny server to learn programming.
