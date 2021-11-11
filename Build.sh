@@ -1,8 +1,8 @@
 
 if [ -d "build" ]; then
-echo "found directory build"
+    echo "found directory build"
 else
-mkdir build
+    mkdir build
 fi
 
 cd build
