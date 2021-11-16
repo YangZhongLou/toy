@@ -6,7 +6,7 @@ function(find_depend_packages)
         # can't boost using environment variable, hard coded here.
         set(Boost_FOUND true PARENT_SCOPE)
         set(Boost_INCLUDE_DIRS "C:/boost_1_77_0" PARENT_SCOPE)
-    else()
+    elseif(UNIX)
         set(Boost_FOUND true PARENT_SCOPE)
         set(Boost_INCLUDE_DIRS "usr/include" PARENT_SCOPE)
     endif()

@@ -14,8 +14,10 @@ else()
     message("Can't find boost")
 endif()
 
-include_directories(${BOOST_INCLUDE_DIRS})
-
+if (WIN32)
+elseif(UNIX)
+  set_target_properties(toy PROPERTIES LINK_LIBRARIES -pthread)
+endif()
 
 project(toy VERSION 1.0)
 
