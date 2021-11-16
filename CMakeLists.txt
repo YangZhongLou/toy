@@ -14,11 +14,11 @@ else()
     message("Can't find boost")
 endif()
 
+project(toy VERSION 1.0)
+
 if (WIN32)
 elseif(UNIX)
   set_target_properties(toy PROPERTIES LINK_LIBRARIES -pthread)
 endif()
-
-project(toy VERSION 1.0)
 
 add_executable(toy src/main.cpp)
